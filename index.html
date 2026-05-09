@@ -2043,6 +2043,13 @@
 
             setTimeout(() => {
                 lockScreen.style.display = 'none';
+                alert("meru vasu heart ni open chesaru madam welcome 💖");
+                const speech = new SpeechSynthesisUtterance("Welcome Madam");
+                speech.rate = 0.9;
+                speech.pitch = 1.2;
+                speech.volume = 1;
+                speech.lang = "en-US";
+                window.speechSynthesis.speak(speech);
                 const mainWebsite = document.getElementById('main-website');
                 mainWebsite.style.display = 'block';
                 setTimeout(() => {
